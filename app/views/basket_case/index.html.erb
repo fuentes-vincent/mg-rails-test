@@ -1,8 +1,10 @@
 <h1>Fruit Basket</h1>
 <span class="data">Raw data: <%= @fruits %></span>
 <br />
-<%= link_to "Order by Name - #{@order}", basket_case_order_by_fruit_path(order: @order), class: "button order-by-name" %>
-<%= link_to "Order by Amount - #{@order}", basket_case_order_by_amount_path(order: @order), class: "button order-by-amount" %>
+<%= link_to "Order by Name (Asc)", basket_case_order_by_fruit_path(order: "asc"), class: "button" %>
+<%= link_to "Order by Name (Desc)", basket_case_order_by_fruit_path(order: "desc"), class: "button" %>
+<%= link_to "Order by Amount (Asc)", basket_case_order_by_amount_path(order: "asc"), class: "button" %>
+<%= link_to "Order by Amount (Desc)", basket_case_order_by_amount_path(order: "desc"), class: "button" %>
 
 <div class="container">
   <ul>
